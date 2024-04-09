@@ -1,0 +1,131 @@
+.header {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  min-height: 150px;
+  box-sizing: border-box;
+  border: none;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1596px;
+  width: 100%;
+  padding: 0 96px;
+  margin: 0 auto;
+}
+
+.header__logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 396px;
+  width: 100%;
+}
+
+.header__logo-text {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+  color: #4C4C4C;
+  max-width: 179px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header__menu {
+  max-width: 555px;
+  width: 100%;
+}
+
+.header__links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+}
+
+.header__link {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 24px;
+}
+
+.header__link:hover {
+  background-color: #E9EAF9;
+  color: #4F58C9;
+}
+
+.header__link_active {
+  background-color: #E9EAF9;
+  color: #4F58C9;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-between;
+  max-width: 196px;
+  width: 100%;
+}
+
+.header__icon {
+  display: flex;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  border: none;
+  width: 42px;
+  height: 42px;
+}
+
+.header__icon_phone {
+  background-image: url(../../images/header_phone.svg);
+  margin-right: 6px;
+}
+
+.header__contacts-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__phone-number {
+  margin: 0;
+}
+
+.header__phone-number_link {
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.4px;
+  text-align: left;
+  color: #000;
+}
+
+.header__text {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: left;
+  color: #4C4C4C;
+}
