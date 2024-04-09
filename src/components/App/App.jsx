@@ -7,7 +7,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path='/Kapibara/' element={<MainPage />} />
+      <Route path='/Kapibara' element={<MainPage />} />
       <Route path='*' element={'Сверстать 404'} />
     </Routes>
   )
