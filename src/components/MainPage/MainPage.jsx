@@ -1,6 +1,7 @@
 import './MainPage.css'
 import Header from '../Header/Header'
 import Banner from '../Banner/Banner'
+import Welcome from '../Welcome/Welcome'
 import Footer from '../Footer/Footer'
 
 function MainPage() {
@@ -11,6 +12,7 @@ function MainPage() {
       <Header />
       <main className='main'>
         <Banner />
+        <Welcome />
       </main>
       <Footer />
     </>
