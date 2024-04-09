@@ -33,7 +33,7 @@ function Header() {
 
           <div className='header__contacts-container'>
             <p className='header__phone-number'>
-              <a className='header__phone-number_link link' href='tel:+71234567890'>
+              <a className='header__phone-link link' href='tel:+71234567890'>
                 +7 123 456 7890
               </a>
             </p>

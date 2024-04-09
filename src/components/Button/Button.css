@@ -1,0 +1,41 @@
+.button {
+  max-width: 188px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat';
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 29.4px;
+  text-align: left;
+  color: #fff;
+  background-color: #737BE1;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+}
+
+.button::after {
+  content: '';
+  background-image: url(../../images/form_checkmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2px;
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.button_disabled {
+  background-color: #BABDBF;
+}
+
+.button_error {
+  background-color: #FFF0F0;
+  color: #EC3C3C;
+}

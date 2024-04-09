@@ -1,7 +1,7 @@
 .galery {
   width: 100%;
   min-height: 150px;
-  padding: 48px 0;
+  margin: 48px 0;
 }
 
 .galery__container {

@@ -1,6 +1,6 @@
 .laboratory {
   width: 100%;
-  background: linear-gradient(#E9EAF9, #F5F5FF);
+  background: linear-gradient(#F5F5FF, #E9EAF9);
   min-height: 150px;
   display: flex;
   flex-shrink: 0;

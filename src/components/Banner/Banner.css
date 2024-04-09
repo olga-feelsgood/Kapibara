@@ -1,10 +1,10 @@
 .banner {
   display: flex;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   background-image: url(../../images/banner.png);
   width: 100%;
-  min-height: 560px;
 }
 
 .banner__container {
@@ -15,6 +15,7 @@
   width: 100%;
   padding: 0 96px;
   margin: 0 auto;
+    min-height: 560px;
 }
 
 .banner__title {

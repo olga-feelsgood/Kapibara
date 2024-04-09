@@ -12,7 +12,7 @@ function Laboratory() {
     <section className='laboratory'>
       <div className='laboratory__container'>
         <div className='laboratory__text-container'>
-          <h3 className='laboratory__title section__title'>Лаборатория</h3>
+          <h3 className='laboratory__title section'>Лаборатория</h3>
 
           <p className='laboratory__text laboratory__text_part1'>Наша лаборатория предлагает широкий
             спектр медицинских исследований, проводимых опытными капибарами-лаборантами. Мы специализируемся на

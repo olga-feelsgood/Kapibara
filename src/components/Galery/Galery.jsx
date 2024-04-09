@@ -8,7 +8,7 @@ function Laboratory() {
     <section className='galery'>
       <div className='galery__container'>
         <div className='galery__title-container'>
-          <h3 className='galery__title section__title'>Галерея</h3>
+          <h3 className='galery__title section'>Галерея</h3>
         </div>
 
 
