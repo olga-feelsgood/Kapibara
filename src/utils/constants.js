@@ -1,0 +1,1 @@
+export const USERNAMEREGEX = '^[A-Za-zА-Яа-яЁё /s -_]+$';

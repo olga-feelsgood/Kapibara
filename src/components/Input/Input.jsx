@@ -4,14 +4,19 @@ import './Input.css';
 function Input(props) {
 
   return (
+    <div className='input'>
     <input
-      className={`input ${props.errorMessage && 'input_error'}`}
+      className={`input__field ${props.errorMessage && 'input__field_error'}`}
       type={props.inputType}
       name={props.inputName}
       value={props.inputValue}
       onChange={props.onChange}
       placeholder={props.inputPlaceholder}
+      required
+      autoComplete='on'
     />
+    <span className='input__error-container'>{props.errorMessage}</span>
+    </div>
   )
 }
 
