@@ -17,13 +17,13 @@ function Header() {
         <nav className='header__menu'>
           <ul className='header__links'>
             <li>
-              <a target='_blank' href='/' className='header__link header__link_active link' rel='noreferrer'>Лаборатория</a>
+              <a href='#laboratory' className='header__link header__link_active link' rel='noreferrer'>Лаборатория</a>
             </li>
             <li>
-              <a target='_blank' href='/' className='header__link link' rel='noreferrer'>Галерея</a>
+              <a href='#galery' className='header__link link' rel='noreferrer'>Галерея</a>
             </li>
             <li>
-              <a target='_blank' href='/' className='header__link link' rel='noreferrer'>Оставить заявку</a>
+              <a href='#form' className='header__link link' rel='noreferrer'>Оставить заявку</a>
             </li>
           </ul>
         </nav>

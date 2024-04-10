@@ -8,7 +8,7 @@ function Form() {
 
   return (
 
-    <section className='form'>
+    <section className='form' id='form'>
       <div className='form__container'>
         <div className='form__text-container'>
           <h3 className='form__title section'>Заявка на диагностику</h3>

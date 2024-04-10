@@ -5,7 +5,7 @@ import '../Section/Section.css'
 function Laboratory() {
 
   return (
-    <section className='galery'>
+    <section className='galery' id='galery'>
       <div className='galery__container'>
         <div className='galery__title-container'>
           <h3 className='galery__title section'>Галерея</h3>

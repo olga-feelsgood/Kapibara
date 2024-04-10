@@ -1,15 +1,27 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
-import MainPage from '../MainPage/MainPage'
+import Header from '../Header/Header'
+import Banner from '../Banner/Banner'
+import Welcome from '../Welcome/Welcome'
+import Laboratory from '../Laboratory/Laboratory'
+import Galery from '../Galery/Galery'
+import Form from '../Form/Form'
+import Footer from '../Footer/Footer'
 
 function App() {
 
 
   return (
-    <Routes>
-      <Route path='/Kapibara' element={<MainPage />} />
-      <Route path='*' element={'Сверстать 404'} />
-    </Routes>
+    <>
+      <Header />
+      <main className='main'>
+        <Banner />
+        <Welcome />
+        <Laboratory />
+        <Galery />
+        <Form />
+      </main>
+      <Footer />
+    </>
   )
 }
 

@@ -2,14 +2,13 @@ import './Laboratory.css'
 import '../Section/Section.css'
 import '../Link/Link.css'
 import kapibara from '../../images/laboratory_kapibara.png'
-import { Link } from 'react-router-dom'
 
 
 function Laboratory() {
 
   return (
 
-    <section className='laboratory'>
+    <section className='laboratory' id='laboratory'>
       <div className='laboratory__container'>
         <div className='laboratory__text-container'>
           <h3 className='laboratory__title section'>Лаборатория</h3>
@@ -22,7 +21,7 @@ function Laboratory() {
           <p className='laboratory__text'>Мы используем современное оборудование и методики и гарантируем
             точность и надежность результатов. </p>
 
-          <Link className='laboratory__link link' to='/Kapibara/'>Оставить заявку</Link>
+          <a href='#form' className='laboratory__link link' rel='noreferrer'>Оставить заявку</a>
         </div>
         <div className='laboratory__photo-container'>
           <img className='laboratory__photo' alt='Капибара' src={kapibara} />
