@@ -1,12 +1,13 @@
-import './Header.css'
-import '../Link/Link.css'
+import './Header.scss'
+import '../Section/Section.scss'
+import '../Link/Link.scss'
 import Logo from '../Logo/Logo'
 
 
 function Header() {
 
   return (
-    <header className='header'>
+    <header className='header section'>
       <div className='header__container'>
 
         <div className='header__logo-container'>

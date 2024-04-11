@@ -1,0 +1,87 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+  flex-shrink: 0;
+  @include flex-center();
+  background-color: $white;
+  min-height: $mh-xs;
+  margin: 0 auto;
+}
+
+.header__container {
+  @include flex-between();
+  @include max-width($max-w);
+  padding: 0 $spacer-xxl;
+  margin: 0 auto;
+}
+
+.header__logo-container {
+  @include flex-between();
+  @include max-width(396px);
+}
+
+.header__logo-text {
+  @include max-width(179px);
+  @include textFont($fs-xxs, $fw-base, $lh-xxs, left);
+  color: $text;
+}
+
+.header__menu {
+  @include max-width(555px);
+}
+
+.header__links {
+  list-style-type: none;
+  @include flex-between();
+  padding-left: 0;
+}
+
+.header__link {
+  color: $black;
+  @include textFont($fs-s, $fw-medium, $lh-s,left);
+  @include border-radius($small-r);
+  padding: $spacer-xxs $spacer-m;
+}
+
+.header__link:hover {
+  background-color: $light;
+  color: $dark;
+}
+
+.header__link_active {
+  background-color: $light;
+  color: $dark;
+}
+
+.header__contacts {
+  @include flex-center();
+  @include max-width(196px);
+}
+
+.header__icon {
+  width: 42px;
+  height: 42px;
+  @include flex-center(column);
+  background-color: $white;
+}
+
+.header__icon_phone {
+  @include bc-repeat();
+  background-image: url(../../images/header_phone.svg);
+  margin-right: $spacer-xxs;
+}
+
+.header__contacts-container {
+  @include flex-center(column);
+}
+
+.header__phone-link {
+  @include textFont($fs-s, $fw-large, $lh-s,left);
+  color: $black;
+}
+
+.header__text {
+  @include textFont($fs-xxs, $fw-base, $lh-xxs,left);
+  color: $text;
+}

@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.button {
+  @include flex-between();
+  @include max-width(188px);
+  @include border-radius($big-r);
+  @include textFont($fs-m, $fw-base, $lh-m, left);
+  background-color: $medium;
+  color: $white;
+  padding: $spacer-xs $spacer-s;
+}
+
+.button::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  @include bc-repeat();
+  background-image: url(../../images/form_checkmark.svg);
+}
+
+.button:hover {
+  @include hover();
+}
+
+.button_disabled {
+  background-color: $disabled;
+}

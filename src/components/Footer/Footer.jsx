@@ -1,11 +1,12 @@
-import './Footer.css'
+import './Footer.scss'
+import '../Section/Section.scss'
 import Logo from '../Logo/Logo'
 
 function Footer() {
 
   return (
 
-    <footer className='footer'>
+    <footer className='footer section'>
       <div className='footer__container'>
         <p className='footer__rights'>Все права защищены Российской Ассоциацией Капибар</p>
 

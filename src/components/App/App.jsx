@@ -1,4 +1,5 @@
-import './App.css'
+import './App.scss'
+import '../Section/Section.scss'
 import Header from '../Header/Header'
 import Banner from '../Banner/Banner'
 import Welcome from '../Welcome/Welcome'
@@ -9,11 +10,10 @@ import Footer from '../Footer/Footer'
 
 function App() {
 
-
   return (
     <>
       <Header />
-      <main className='main'>
+      <main className='main section'>
         <Banner />
         <Welcome />
         <Laboratory />

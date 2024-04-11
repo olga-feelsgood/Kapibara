@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.footer {
+  flex-shrink: 0;
+  @include flex-center();
+  min-height: $mh-xs;
+  background-color: $dark;
+}
+
+.footer__container {
+  @include flex-between();
+  @include max-width($max-w);
+  margin: 0 auto;
+  padding: 0 $spacer-xxl;
+}
+
+.footer__logo-container {
+  @include flex-between();
+  @include max-width(194px);
+}
+
+.footer__rights {
+  @include textFont($fs-xs, $fw-base, $lh-xs, left);
+  color: $white;
+}

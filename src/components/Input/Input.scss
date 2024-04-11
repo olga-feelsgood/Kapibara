@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.input {
+  @include flex-center(column);
+}
+
+.input__field {
+  width: 280px;
+  height: 53px;
+  @include flex-center();
+  @include border-radius($big-r);
+  @include textFont($fs-m, $fw-base, $lh-m, left);
+  background-color: $white;
+  color: $black;
+  padding-left: $spacer-s;
+}
+
+.input__field::placeholder {
+  @include textFont($fs-m, $fw-base, $lh-m, left);
+  color: $gray;
+}
+
+.input__field:focus {
+  outline: 2px solid $medium;
+}
+
+.input__field_error {
+  border: 2px solid $error;
+}
+
+.input__error-container {
+  width: 100%;
+  min-height: $mh-xxs;
+  @include textFont($fs-m, $fw-base, $lh-m, left);
+  color: $error;
+  margin-top: $spacer-xxs;
+  padding-left: $spacer-s;
+}
