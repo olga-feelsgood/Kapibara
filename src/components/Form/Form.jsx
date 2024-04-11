@@ -1,5 +1,5 @@
-import './Form.css'
-import '../Section/Section.css'
+import './Form.scss'
+import '../Section/Section.scss'
 import Input from '../Input/Input'
 import Button from '../Button/Button'
 import { useEffect } from 'react'
@@ -23,10 +23,10 @@ function Form() {
 
   return (
 
-    <section className='form' id='form'>
+    <section className='form section' id='form'>
       <div className='form__container'>
         <div className='form__text-container'>
-          <h3 className='form__title section'>Заявка на диагностику</h3>
+          <h3 className='form__title section__title'>Заявка на диагностику</h3>
 
           <p className='form__text'> Доверьте свои медицинские исследования надежным
             капибарам-лаборантам и получите качественные результаты в кратчайшие сроки!</p>

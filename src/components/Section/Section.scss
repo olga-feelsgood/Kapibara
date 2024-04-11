@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.section {
+  width: 100%;
+}
+
+.section__title {
+  @include textFont($fs-xl, $fw-large, $lh-xl, left);
+}

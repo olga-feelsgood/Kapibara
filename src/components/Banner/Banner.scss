@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.banner {
+  @include flex-center();
+  @include bc-repeat(cover);
+  background-image: url(../../images/banner.png);
+}
+
+.banner__container {
+  @include flex(column);
+  @include max-width($max-w);
+  min-height: $mh-m;
+  margin: 0 auto;
+  padding: 0 $spacer-xxl;
+}
+
+.banner__title {
+  @include max-width(623px);
+  @include border-radius($big-r);
+  @include textFont(48px, 700, 58.51px, left);
+  background-color: $medium;
+  color: $white;
+  margin-top: $spacer-xxxl;
+  padding: $spacer-xs $spacer-s;
+}
+
+.banner__subtitle {
+  @include max-width(430px);
+  @include border-radius($big-r);
+  @include textFont(48px, 700, 58.51px, left);
+  background-color: $white;
+  color: $medium;
+  padding: $spacer-xs $spacer-s;
+}

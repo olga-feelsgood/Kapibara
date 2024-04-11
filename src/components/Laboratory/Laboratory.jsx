@@ -1,6 +1,6 @@
-import './Laboratory.css'
-import '../Section/Section.css'
-import '../Link/Link.css'
+import './Laboratory.scss'
+import '../Section/Section.scss'
+import '../Link/Link.scss'
 import kapibara from '../../images/laboratory_kapibara.png'
 
 
@@ -8,10 +8,10 @@ function Laboratory() {
 
   return (
 
-    <section className='laboratory' id='laboratory'>
+    <section className='laboratory section' id='laboratory'>
       <div className='laboratory__container'>
         <div className='laboratory__text-container'>
-          <h3 className='laboratory__title section'>Лаборатория</h3>
+          <h3 className='laboratory__title section__title'>Лаборатория</h3>
 
           <p className='laboratory__text laboratory__text_part1'>Наша лаборатория предлагает широкий
             спектр медицинских исследований, проводимых опытными капибарами-лаборантами. Мы специализируемся на

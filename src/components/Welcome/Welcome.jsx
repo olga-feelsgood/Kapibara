@@ -1,10 +1,11 @@
-import './Welcome.css'
+import './Welcome.scss'
+import '../Section/Section.scss'
 
 
 function Welcome() {
 
   return (
-    <div className='welcome' >
+    <div className='welcome section' >
       <div className='welcome__container'>
         <p className='welcome__text'>Добро пожаловать в медицинскую лабораторию
           KapibaraLab, где работают исключительно капибары — ваш надежный партнер

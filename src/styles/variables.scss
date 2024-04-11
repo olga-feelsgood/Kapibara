@@ -1,0 +1,71 @@
+// цвета
+$text: #4C4C4C;
+$gradientOne: #F5F5FF;
+$error: #E17373;
+$disabled: #BABDBF;
+$gray: #A0A0A0;
+$light: #E9EAF9;
+$medium: #737BE1;
+$dark: #4F58C9;
+$white: #fff;
+$black: #000;
+
+//Weights шрифтов
+$fw-base: 400;
+$fw-medium: 500;
+$fw-large: 600;
+$fw-extra: 700;
+
+// Sizes шрифтов
+$fs-xxs: 14px;
+$fs-xs: 16px;
+$fs-s: 18px;
+$fs-m: 21px;
+$fs-l: 24px;
+$fs-xl: 36px;
+$fs-xxl: 48px;
+
+// Line-heights шрифтов
+$lh-xxs: 18.2px;
+$lh-xs: 20.8px;
+$lh-s: 23.4px;
+$lh-m: 29.4px;
+$lh-l: 33.6px;
+$lh-xl: 43.88px;
+$lh-xxl: 58.51px;
+
+// минимальная и максимальная ширина области просмотра
+$min-w: 320px;
+$max-w: 1596px;
+
+// минимальная высота области просмотра
+$mh-xxs: 30px;
+$mh-xs: 150px;
+$mh-s: 260px;
+$mh-m: 560px;
+$mh-l: 738px;
+
+// радиусы для border-box
+$big-r: 8px;
+$small-r: 4px;
+
+// отступы
+$spacer-base: 24px;
+
+$spacer-xxs: 0.25 * $spacer-base;
+$spacer-xs: 0.5 * $spacer-base;
+$spacer-s: 0.75 * $spacer-base;
+$spacer-m: $spacer-base;
+$spacer-l: 1.5 * $spacer-base;
+$spacer-xl: 2 * $spacer-base;
+$spacer-xxl: 4 * $spacer-base;
+$spacer-xxxl: 8.75 * $spacer-base;
+
+
+// контрольные точки
+// bootstrap
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

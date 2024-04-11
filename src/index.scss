@@ -1,4 +1,8 @@
+@import '../src/styles/reset.scss';
 @import url(../src/vendor/fonts/fonts.css);
+@import './styles/variables.scss';
+@import './styles/mixins.scss';
+
 
 :root {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -12,17 +16,16 @@
 body {
   margin: 0;
   place-items: center;
-  min-width: 320px;
+  min-width: $min-w;
   min-height: 100vh;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
+  @include flex-center(column);
   min-height: 100vh;
-  background-color: #fff;
+  background-color: $white;
 }
 
-/* * {
-outline: 1px solid red;
-} */
+// * {
+// outline: 1px solid red;
+// }
