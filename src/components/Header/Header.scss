@@ -39,7 +39,7 @@
 
 .header__link {
   color: $black;
-  @include textFont($fs-s, $fw-medium, $lh-s,left);
+  @include textFont($fs-s, $fw-medium, $lh-s, left);
   @include border-radius($small-r);
   padding: $spacer-xxs $spacer-m;
 }
@@ -77,11 +77,46 @@
 }
 
 .header__phone-link {
-  @include textFont($fs-s, $fw-large, $lh-s,left);
+  @include textFont($fs-s, $fw-large, $lh-s, left);
   color: $black;
 }
 
 .header__text {
-  @include textFont($fs-xxs, $fw-base, $lh-xxs,left);
+  @include textFont($fs-xxs, $fw-base, $lh-xxs, left);
   color: $text;
+}
+
+@media(max-width: $xl) {
+  .header__menu {
+    @include max-width(400px);
+  }
+
+  .header__link {
+    padding-left: $spacer-xxs;
+    padding-right: $spacer-xxs;
+  }
+}
+
+@media(max-width: $lg) {
+  .header__logo-container {
+    @include max-width(300px);
+  }
+
+  .header__logo-text {
+    margin-left: $spacer-xs;
+  }
+
+  .header__link {
+    @include textFont($fs-xxs, $fw-base, $lh-xxs, left);
+  }
+}
+
+@media(max-width: $md) {
+  .header__container {
+    padding: 0 $spacer-l;
+  }
+
+  .header__menu {
+    @include max-width(320px);
+  }
 }

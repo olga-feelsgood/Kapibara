@@ -34,3 +34,10 @@
   color: $medium;
   padding: $spacer-xs $spacer-s;
 }
+
+
+@media(max-width: $md) {
+  .banner__container {
+    padding: 0 $spacer-l;
+  }
+}

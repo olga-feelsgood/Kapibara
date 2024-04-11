@@ -24,3 +24,9 @@
   @include textFont($fs-xs, $fw-base, $lh-xs, left);
   color: $white;
 }
+
+@media(max-width: $md) {
+  .footer__container {
+    padding: 0 $spacer-l;
+  }
+}

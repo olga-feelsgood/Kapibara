@@ -19,3 +19,9 @@
   @include textFont($fs-l, $fw-large, $lh-l, center, italic);
   color: $black;
 }
+
+@media(max-width: $md) {
+  .welcome__container {
+    padding: 0 $spacer-l;
+  }
+}

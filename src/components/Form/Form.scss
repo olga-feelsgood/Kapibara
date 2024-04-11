@@ -38,3 +38,9 @@
   gap: 20px;
   margin-bottom: $spacer-xxs;
 }
+
+@media(max-width: $md) {
+  .form__container {
+    padding: 0 $spacer-l;
+  }
+}
