@@ -59,6 +59,12 @@
   @include max-width(196px);
 }
 
+.header__phone-link {
+  @include flex-center();
+  @include textFont($fs-s, $fw-large, $lh-s, left);
+  color: $black;
+}
+
 .header__icon {
   width: 42px;
   height: 42px;
@@ -74,11 +80,6 @@
 
 .header__contacts-container {
   @include flex-center(column);
-}
-
-.header__phone-link {
-  @include textFont($fs-s, $fw-large, $lh-s, left);
-  color: $black;
 }
 
 .header__text {

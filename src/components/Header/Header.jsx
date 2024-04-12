@@ -11,7 +11,7 @@ function Header() {
       <div className='header__container'>
 
         <div className='header__logo-container'>
-          <Logo place='header'/>
+          <Logo place='header' />
           <p className='header__logo-text'>Современные методики диагностики</p>
         </div>
 
@@ -30,17 +30,14 @@ function Header() {
         </nav>
 
         <div className='header__contacts'>
-          <span className='header__icon header__icon_phone'></span>
-
-          <div className='header__contacts-container'>
-            <p className='header__phone-number'>
-              <a className='header__phone-link link' href='tel:+71234567890'>
-                +7 123 456 7890
-              </a>
-            </p>
-            <p className='header__text'>
-              Звонок бесплатный</p>
-          </div>
+          <a className='header__phone-link link' href='tel:+71234567890'>
+            <span className='header__icon header__icon_phone'></span>
+            <div className='header__contacts-container'>
+              +7 123 456 7890
+              <p className='header__text'>
+                Звонок бесплатный</p>
+            </div>
+          </a>
         </div>
       </div>
     </header>
