@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.popup {
+  @include flex-center();
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient($gradientOne, $light);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.popup_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__text {
+  @include max-width(572px);
+  @include textFont($fs-l, $fw-large, $lh-l, left);
+  color: $medium;
+}
+
+.popup__icon {
+  width: 90px;
+  height: 90px;
+  @include bc-repeat();
+  background-image: url(../../images/popup_check.svg);
+  margin-right: $spacer-m;
+}
+
+@media(max-width: $sm) {
+  .popup {
+    flex-direction: column;
+  }
+
+  .popup__icon {
+    margin-right: 0;
+    margin-bottom: $spacer-m;
+  }
+
+  .popup__text {
+    @include max-width(324px);
+    @include textFont($fs-s, $fw-large, $lh-ss, center);
+  }
+}
