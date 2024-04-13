@@ -121,3 +121,42 @@
     @include max-width(320px);
   }
 }
+
+@media(max-width: $sm) {
+  .header {
+    min-height: $mh-xxs;
+  }
+
+  .header__container {
+    padding: $spacer-m $spacer-s;
+    margin-top: $spacer-xxs;
+    margin-bottom: $spacer-xxs;
+  }
+
+  .header__logo-container {
+    @include flex(column);
+    align-items: flex-start;
+  }
+
+  .header__logo-text {
+    @include max-width(250px);
+    @include textFont($fs-xxxs, $fw-base, $lh-xxxs, left);
+    margin-left: 0;
+    padding-top: $spacer-xxs;
+    padding-left: $spacer-xxxs;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__contacts-container {
+    display: none;
+  }
+
+  .header__contacts {
+    @include max-width(42px);
+    margin-top: -4px;
+    margin-right: -4px;
+  }
+}

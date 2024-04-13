@@ -26,7 +26,7 @@ function Form() {
     <section className='form section' id='form'>
       <div className='form__container'>
         <div className='form__text-container'>
-          <h3 className='form__title section__title'>Заявка на диагностику</h3>
+          <h3 className='form__title section__title'>Заявка <br/>на диагностику</h3>
 
           <p className='form__text'> Доверьте свои медицинские исследования надежным
             капибарам-лаборантам и получите качественные результаты в кратчайшие сроки!</p>

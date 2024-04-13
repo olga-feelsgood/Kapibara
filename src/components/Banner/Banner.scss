@@ -19,7 +19,8 @@
 .banner__title {
   @include max-width(623px);
   @include border-radius($big-r);
-  @include textFont(48px, 700, 58.51px, left);
+  border-bottom-left-radius: 0;
+  @include textFont($fs-xxl, $fw-extra, $lh-xxl, left);
   background-color: $medium;
   color: $white;
   margin-top: $spacer-xxxl;
@@ -29,7 +30,8 @@
 .banner__subtitle {
   @include max-width(430px);
   @include border-radius($big-r);
-  @include textFont(48px, 700, 58.51px, left);
+  border-top-left-radius: 0;
+  @include textFont($fs-xxl, $fw-extra, $lh-xxl, left);
   background-color: $white;
   color: $medium;
   padding: $spacer-xs $spacer-s;
@@ -39,5 +41,36 @@
 @media(max-width: $md) {
   .banner__container {
     padding: 0 $spacer-l;
+  }
+}
+
+@media(max-width: $sm) {
+  .banner {
+    position: relative;
+    min-height: 243px;
+    background-image: url(../../images/banner_mobile.png);
+  }
+
+  .banner__container {
+    position: absolute;
+    @include max-width(360px);
+    min-height: 96px;
+    padding-left: $spacer-s;
+    padding-right: $spacer-s;
+    top: 197px;
+    left: 0;
+  }
+
+  .banner__title {
+    @include textFont($fs-l, $fw-extra, $lh-l, left);
+    padding: $spacer-xxs $spacer-xs;
+    margin-top: 0;
+  }
+
+  .banner__subtitle {
+    @include max-width(221px);
+    @include textFont($fs-l, $fw-extra, $lh-l, left);
+    background-color: $light;
+    padding: $spacer-xxs $spacer-xs;
   }
 }

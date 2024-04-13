@@ -30,3 +30,24 @@
     padding: 0 $spacer-l;
   }
 }
+
+@media(max-width: $sm) {
+  .footer {
+    min-height: 121px;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    padding-left: $spacer-s;
+    padding-right: $spacer-s;
+  }
+
+  .footer__rights {
+    @include textFont($fs-xxs, $fw-base, $lh-xxs, center);
+  }
+
+  .footer__logo-container {
+    @include max-width(150px);
+    margin-bottom: $spacer-s;
+  }
+}

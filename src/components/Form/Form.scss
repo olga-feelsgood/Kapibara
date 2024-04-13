@@ -44,3 +44,35 @@
     padding: 0 $spacer-l;
   }
 }
+
+@media(max-width: $sm) {
+  .form {
+    @include flex();
+    margin-bottom: 30px;
+  }
+
+  .form__container {
+    @include flex(column);
+    padding: $spacer-l $spacer-s;
+  }
+
+  .form__title {
+    margin-top: $spacer-xxs;
+    margin-bottom: $spacer-l;
+  }
+
+  .form__text {
+    @include textFont($fs-s, $fw-base, $lh-ss, left);
+    margin-bottom: $spacer-l;
+  }
+
+  .form__inputs-container {
+    @include flex(column);
+    gap: 0;
+    margin-bottom: $spacer-s;
+  }
+
+  .form__text-container {
+    align-items: flex-start;
+  }
+}

@@ -31,9 +31,28 @@
 
 .input__error-container {
   width: 100%;
-  min-height: $mh-xxs;
+  min-height: $mh-xxxs;
   @include textFont($fs-m, $fw-base, $lh-m, left);
   color: $error;
   margin-top: $spacer-xxs;
   padding-left: $spacer-s;
+}
+
+@media(max-width: $sm) {
+  .input__field {
+    width: 324px;
+    height: 49px;
+    @include textFont($fs-s, $fw-base, $lh-ss, left);
+  }
+
+  .input__field::placeholder {
+    @include textFont($fs-s, $fw-base, $lh-ss, left);
+  }
+
+  .input__error-container {
+    min-height: $lh-xxs;
+    @include textFont($fs-xxs, $fw-base, $lh-xxs, left);
+    margin-top: 0;
+    padding-left: $spacer-s;
+  }
 }

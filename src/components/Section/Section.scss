@@ -9,3 +9,9 @@
 .section__title {
   @include textFont($fs-xl, $fw-large, $lh-xl, left);
 }
+
+@media(max-width: $sm) {
+  .section__title {
+    @include textFont($fs-ll, $fw-large, $lh-ll, left);
+  }
+}

@@ -25,3 +25,18 @@
     padding: 0 $spacer-l;
   }
 }
+
+@media(max-width: $sm) {
+  .welcome {
+    min-height: $mh-xs;
+  }
+
+  .welcome__container {
+    padding: 30px $spacer-s;
+  }
+
+  .welcome__text {
+    @include textFont($fs-s, $fw-large, $lh-ss, center, italic);
+    padding-top: 46px;
+  }
+}
