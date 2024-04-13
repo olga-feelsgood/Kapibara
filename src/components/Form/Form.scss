@@ -35,6 +35,7 @@
 
 .form__inputs-container {
   @include flex();
+  align-items: flex-start;
   gap: 20px;
   margin-bottom: $spacer-xxs;
 }

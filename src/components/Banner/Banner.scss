@@ -57,19 +57,22 @@
     min-height: 96px;
     padding-left: $spacer-s;
     padding-right: $spacer-s;
-    top: 197.6px;
+    top: 198px;
     left: 0;
   }
 
   .banner__title {
     @include textFont($fs-l, $fw-extra, $lh-l, left);
-    padding: $spacer-xxs $spacer-xs;
+    line-height: 29px;
+    padding: 8px $spacer-xs;
     margin-top: 0;
   }
 
   .banner__subtitle {
     @include max-width(221px);
     @include textFont($fs-l, $fw-extra, $lh-l, left);
+    line-height: 29px;
+    padding: 8px $spacer-xs;
     background-color: $light;
     padding: $spacer-xxs $spacer-xs;
   }

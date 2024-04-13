@@ -6,6 +6,8 @@ import Popup from '../Popup/Popup'
 import { useEffect, useState } from 'react'
 import useForm from '../../utils/useForm'
 import { USERNAMEREGEX } from '../../utils/constants'
+import { registerNewUser } from '../../utils/Register'
+
 
 
 function Form() {
@@ -19,13 +21,22 @@ function Form() {
 
   function handleSubmit(evt) {
     evt.preventDefault();
-    console.log('форма отправлена'); // дописать
+    console.log('форма отправлена');
+    console.log({
+      name: inputValues.name,
+      surname: inputValues.surname,
+      middlename: inputValues.middlename
+    })
+    registerNewUser({
+      name: inputValues.name,
+      surname: inputValues.surname,
+      middlename: inputValues.middlename
+    });
     setIsPopupOpen(true);
   }
 
   function closePopup() {
     setIsPopupOpen(false);
-    resetForm();
   }
 
   return (
@@ -74,7 +85,7 @@ function Form() {
           </form>
         </div>
       </section >
-      <Popup isOpen={isPopupOpen} onClose={closePopup}/>
+      <Popup isOpen={isPopupOpen} onClose={closePopup} />
     </>
   )
 }

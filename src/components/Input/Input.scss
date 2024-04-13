@@ -30,7 +30,7 @@
 }
 
 .input__error-container {
-  width: 100%;
+  @include max-width(280px);
   min-height: $mh-xxxs;
   @include textFont($fs-m, $fw-base, $lh-m, left);
   color: $error;
