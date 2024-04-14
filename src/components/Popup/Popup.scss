@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
+
 .popup {
   @include flex-center();
   position: fixed;
@@ -45,6 +46,6 @@
 
   .popup__text {
     @include max-width(324px);
-    @include textFont($fs-s, $fw-large, $lh-ss, center);
+    @include textFont($fs-s, $fw-large, $lh-sm, center);
   }
 }

@@ -7,11 +7,11 @@
 }
 
 .section__title {
-  @include textFont($fs-xl, $fw-large, $lh-xl, left);
+  @include textFont($fs-xxl, $fw-large, $lh-xxl, left);
 }
 
 @media(max-width: $sm) {
   .section__title {
-    @include textFont($fs-ll, $fw-large, $lh-ll, left);
+    @include textFont($fs-xl, $fw-large, $lh-xl, left);
   }
 }

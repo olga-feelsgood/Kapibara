@@ -3,21 +3,20 @@
 
 
 .galery {
-  margin: $spacer-xl 0;
+  margin: $spacer-xxl 0;
 }
 
 .galery__container {
   @include flex-between(column);
   @include max-width($max-w);
   margin: 0 auto;
-  padding: $spacer-xl $spacer-xxl;
+  padding: $spacer-xxl $spacer-xxxl;
 }
 
 .galery__title-container {
   width: 100%;
-  margin-bottom: $spacer-xl;
+  margin-bottom: $spacer-xxl;
 }
-
 
 .galery__photo-container {
   width: 100%;
@@ -128,7 +127,7 @@
 
 @media(max-width: $md) {
   .galery__container {
-    padding: 0 $spacer-l;
+    padding: 0 $spacer-xl;
   }
 }
 
@@ -139,7 +138,7 @@
   }
 
   .galery__title-container {
-    margin-top: $spacer-xxs;
+    margin-top: $spacer-xxxs;
     margin-bottom: $spacer-m;
   }
 

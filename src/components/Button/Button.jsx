@@ -1,9 +1,17 @@
 import './Button.scss';
 
+
 function Button(props) {
 
   return (
-      <button onClick={props.onClick} className={`button ${!props.stepIsValid && 'button_disabled'}`} type={props.buttonType} disabled={!props.stepIsValid}>{props.buttonTitle}</button>
+    <button
+      onClick={props.onClick}
+      className={`button ${!props.stepIsValid && 'button_disabled'}`}
+      type={props.buttonType}
+      disabled={!props.stepIsValid}
+    >
+      {props.buttonTitle}
+    </button>
   )
 }
 

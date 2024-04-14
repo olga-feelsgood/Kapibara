@@ -7,7 +7,6 @@ import kapibara from '../../images/laboratory_kapibara.png'
 function Laboratory() {
 
   return (
-
     <section className='laboratory section' id='laboratory'>
       <div className='laboratory__container'>
         <h3 className='laboratory__title section__title'>Лаборатория</h3>
@@ -17,10 +16,8 @@ function Laboratory() {
               спектр медицинских исследований, проводимых опытными капибарами-лаборантами. Мы специализируемся на
               анализе биоматериалов, микробиологических исследованиях,
               генетической диагностике и многом другом. </p>
-
             <p className='laboratory__text'>Мы используем современное оборудование и методики и гарантируем
               точность и надежность результатов. </p>
-
             <a href='#form' className='laboratory__link link' rel='noreferrer'>Оставить заявку</a>
           </div>
           <div className='laboratory__photo-container'>
@@ -28,9 +25,7 @@ function Laboratory() {
           </div>
         </div>
       </div>
-
     </section >
-
   )
 }
 

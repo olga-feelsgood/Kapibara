@@ -9,7 +9,6 @@ import { USERNAMEREGEX } from '../../utils/constants'
 import { registerNewUser } from '../../utils/Register'
 
 
-
 function Form() {
 
   const { inputValues, handleChange, errors, isFormValid, resetForm } = useForm();
@@ -44,7 +43,7 @@ function Form() {
       <section className='form section' id='form'>
         <div className='form__container'>
           <div className='form__text-container'>
-            <h3 className='form__title section__title'>Заявка <nobr>на диагностику</nobr></h3>
+            <h3 className='form__title section__title'>Заявка <span style={{whiteSpace: 'nowrap'}}>на диагностику</span></h3>
 
             <p className='form__text'> Доверьте свои медицинские исследования надежным
               капибарам-лаборантам и получите качественные результаты в кратчайшие сроки!</p>

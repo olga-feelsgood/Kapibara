@@ -9,11 +9,15 @@
 }
 
 //display flex
-@mixin flex($d: row) {
+@mixin flex($d: row, $al:normal) {
   display: flex;
 
   @if ($d ==column) {
     flex-direction: column;
+  }
+
+  @if ($al ==flex-start) {
+    align-items: flex-start;
   }
 }
 
@@ -27,13 +31,16 @@
   }
 }
 
-@mixin flex-between($d: row) {
+@mixin flex-between($d: row,  $al:center) {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @if ($d ==column) {
     flex-direction: column;
+  }
+  @if ($al ==flex-start) {
+    align-items: flex-start;
   }
 }
 
@@ -60,9 +67,9 @@
 }
 
 //link hover
-@mixin hover {
+@mixin hover ($h: 0.7){
   cursor: pointer;
-  opacity: 0.7;
+  opacity: $h;
 }
 
 //grid position

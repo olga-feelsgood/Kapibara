@@ -23,21 +23,21 @@ $fs-xs: 16px;
 $fs-s: 18px;
 $fs-m: 21px;
 $fs-l: 24px;
-$fs-ll: 28px;
-$fs-xl: 36px;
-$fs-xxl: 48px;
+$fs-xl: 28px;
+$fs-xxl: 36px;
+$fs-xxxl: 48px;
 
 // Line-heights шрифтов
 $lh-xxxs: 15.6px;
 $lh-xxs: 18.2px;
 $lh-xs: 20.8px;
 $lh-s: 23.4px;
-$lh-ss: 25.2px;
+$lh-sm: 25.2px;
 $lh-m: 29.4px;
 $lh-l: 33.6px;
-$lh-ll: 34.13px;
-$lh-xl: 43.88px;
-$lh-xxl: 58.51px;
+$lh-xl: 34.13px;
+$lh-xxl: 43.88px;
+$lh-xxxl: 58.51px;
 
 // минимальная и максимальная ширина области просмотра
 $min-w: 360px;
@@ -46,11 +46,12 @@ $max-w: 1596px;
 // минимальная высота области просмотра
 $mh-xxxs: 30px;
 $mh-xxs: 50px;
-$mh-xs: 150px;
-$mh-s: 260px;
-$mh-ss: 288px;
-$mh-m: 560px;
-$mh-l: 738px;
+$mh-xs: 96px;
+$mh-s: 121px;
+$mh-m: 150px;
+$mh-l: 243px;
+$mh-xl: 260px;
+$mh-xxl: 560px;
 
 // радиусы для border-box
 $big-r: 8px;
@@ -59,17 +60,18 @@ $small-r: 4px;
 // отступы
 $spacer-base: 24px;
 
-$spacer-xxxs: 0.125 * $spacer-base;
-$spacer-xxs: 0.25 * $spacer-base;
-$spacer-xxs: 0.25 * $spacer-base;
-$spacer-xs: 0.5 * $spacer-base;
-$spacer-s: 0.75 * $spacer-base;
-$spacer-m: $spacer-base;
-$spacer-l: 1.5 * $spacer-base;
-$spacer-xl: 2 * $spacer-base;
-$spacer-xxl: 4 * $spacer-base;
-$spacer-xxxl: 8.75 * $spacer-base;
-
+$spacer-xxxxxs: 0.125 * $spacer-base;//3px
+$spacer-xxxxs: calc(1/6 * $spacer-base);//4px
+$spacer-xxxs: 0.25 * $spacer-base;//6px
+$spacer-xxs: calc(1/3 * $spacer-base);//8px
+$spacer-xs: 0.5 * $spacer-base;//12px
+$spacer-s: 0.75 * $spacer-base;//18px
+$spacer-m: $spacer-base;//25px
+$spacer-l: 1.25 * $spacer-base;//30px
+$spacer-xl: 1.5 * $spacer-base;//36px
+$spacer-xxl: 2 * $spacer-base;//48px
+$spacer-xxxl: 4 * $spacer-base;//96px
+$spacer-xxxxl: 8.75 * $spacer-base;//210px
 
 // контрольные точки
 // bootstrap

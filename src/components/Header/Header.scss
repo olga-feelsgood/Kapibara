@@ -1,18 +1,21 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
+
 .header {
   flex-shrink: 0;
+  top:0;
+  left:0;
   @include flex-center();
   background-color: $white;
-  min-height: $mh-xs;
+  min-height: $mh-m;
   margin: 0 auto;
 }
 
 .header__container {
   @include flex-between();
   @include max-width($max-w);
-  padding: 0 $spacer-xxl;
+  padding: 0 $spacer-xxxl;
   margin: 0 auto;
 }
 
@@ -41,15 +44,12 @@
   color: $black;
   @include textFont($fs-s, $fw-medium, $lh-s, left);
   @include border-radius($small-r);
-  padding: $spacer-xxs $spacer-m;
+  padding: $spacer-xxxs $spacer-m;
+  text-decoration: none;
 }
 
 .header__link:hover {
-  background-color: $light;
-  color: $dark;
-}
-
-.header__link_active {
+  @include hover(1);
   background-color: $light;
   color: $dark;
 }
@@ -75,7 +75,7 @@
 .header__icon_phone {
   @include bc-repeat();
   background-image: url(../../images/header_phone.svg);
-  margin-right: $spacer-xxs;
+  margin-right: $spacer-xxxs;
 }
 
 .header__contacts-container {
@@ -93,8 +93,8 @@
   }
 
   .header__link {
-    padding-left: $spacer-xxs;
-    padding-right: $spacer-xxs;
+    padding-left: $spacer-xxxs;
+    padding-right: $spacer-xxxs;
   }
 }
 
@@ -114,7 +114,7 @@
 
 @media(max-width: $md) {
   .header__container {
-    padding: 0 $spacer-l;
+    padding: 0 $spacer-xl;
   }
 
   .header__menu {
@@ -129,21 +129,21 @@
 
   .header__container {
     padding: $spacer-m $spacer-s;
-    margin-top: $spacer-xxs;
-    margin-bottom: $spacer-xxs;
+    margin-top: $spacer-xxxs;
+    margin-bottom: $spacer-xxxs;
   }
 
   .header__logo-container {
-    @include flex(column);
-    align-items: flex-start;
+    @include flex(column, flex-start);
+    // align-items: flex-start;
   }
 
   .header__logo-text {
     @include max-width(250px);
     @include textFont($fs-xxxs, $fw-base, $lh-xxxs, left);
     margin-left: 0;
-    padding-top: $spacer-xxs;
-    padding-left: $spacer-xxxs;
+    padding-top: $spacer-xxxs;
+    padding-left: $spacer-xxxxxs;
   }
 
   .header__menu {
@@ -156,7 +156,7 @@
 
   .header__contacts {
     @include max-width(42px);
-    margin-top: -4px;
-    margin-right: -4px;
+    margin-top: -$spacer-xxxxs;
+    margin-right: -$spacer-xxxxs;
   }
 }

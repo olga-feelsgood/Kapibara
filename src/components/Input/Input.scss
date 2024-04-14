@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
+
 .input {
   @include flex-center(column);
 }
@@ -34,7 +35,7 @@
   min-height: $mh-xxxs;
   @include textFont($fs-m, $fw-base, $lh-m, left);
   color: $error;
-  margin-top: $spacer-xxs;
+  margin-top: $spacer-xxxs;
   padding-left: $spacer-s;
 }
 
@@ -42,11 +43,11 @@
   .input__field {
     width: 324px;
     height: 49px;
-    @include textFont($fs-s, $fw-base, $lh-ss, left);
+    @include textFont($fs-s, $fw-base, $lh-sm, left);
   }
 
   .input__field::placeholder {
-    @include textFont($fs-s, $fw-base, $lh-ss, left);
+    @include textFont($fs-s, $fw-base, $lh-sm, left);
   }
 
   .input__error-container {

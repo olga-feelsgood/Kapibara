@@ -22,7 +22,6 @@ function Laboratory() {
         </div>
       </div>
     </section >
-
   )
 }
 

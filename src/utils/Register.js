@@ -11,7 +11,7 @@ function checkRes(res) {
 
 export function registerNewUser({ surname, name, middlename }) {
   console.log({ surname, name, middlename })
-  return fetch(`${BASE_URL}/signup`, {
+  return fetch(`${BASE_URL}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

@@ -1,9 +1,10 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
+
 .form {
   @include flex();
-  margin-bottom: $spacer-xxl;
+  margin-bottom: $spacer-xxxl;
 }
 
 .form__container {
@@ -12,7 +13,7 @@
   @include border-radius($big-r);
   background: linear-gradient($gradientOne, $light);
   margin: 0 auto;
-  padding: $spacer-xl $spacer-xxl;
+  padding: $spacer-xxl $spacer-xxxl;
 }
 
 .form__text-container {
@@ -21,12 +22,12 @@
 }
 
 .form__title {
-  margin-bottom: $spacer-xl;
+  margin-bottom: $spacer-xxl;
 }
 
 .form__text {
   @include textFont($fs-m, $fw-base, $lh-m, center);
-  margin-bottom: $spacer-xl;
+  margin-bottom: $spacer-xxl;
 }
 
 .form__form-container {
@@ -34,37 +35,37 @@
 }
 
 .form__inputs-container {
-  @include flex();
-  align-items: flex-start;
+  @include flex(flex-start);
+  // align-items: flex-start;
   gap: 20px;
-  margin-bottom: $spacer-xxs;
+  margin-bottom: $spacer-xxxs;
 }
 
 @media(max-width: $md) {
   .form__container {
-    padding: 0 $spacer-l;
+    padding: 0 $spacer-xl;
   }
 }
 
 @media(max-width: $sm) {
   .form {
     @include flex();
-    margin-bottom: 30px;
+    margin-bottom: $spacer-l;
   }
 
   .form__container {
     @include flex(column);
-    padding: $spacer-l $spacer-s;
+    padding: $spacer-xl $spacer-s;
   }
 
   .form__title {
-    margin-top: $spacer-xxs;
-    margin-bottom: $spacer-l;
+    margin-top: $spacer-xxxs;
+    margin-bottom: $spacer-xl;
   }
 
   .form__text {
-    @include textFont($fs-s, $fw-base, $lh-ss, left);
-    margin-bottom: $spacer-l;
+    @include textFont($fs-s, $fw-base, $lh-sm, left);
+    margin-bottom: $spacer-xl;
   }
 
   .form__inputs-container {
@@ -74,6 +75,7 @@
   }
 
   .form__text-container {
-    align-items: flex-start;
+    @include flex-between(column, flex-start);
+    // align-items: flex-start;
   }
 }

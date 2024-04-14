@@ -28,10 +28,9 @@
   background-color: $disabled;
 }
 
-
 @media(max-width: $sm) {
   .button {
     @include max-width(171px);
-    @include textFont($fs-s, $fw-base, $lh-ss, left);
+    @include textFont($fs-s, $fw-base, $lh-sm, left);
   }
 }

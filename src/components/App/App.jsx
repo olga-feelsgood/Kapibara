@@ -8,12 +8,13 @@ import Galery from '../Galery/Galery'
 import Form from '../Form/Form'
 import Footer from '../Footer/Footer'
 
+
 function App() {
 
   return (
     <>
       <Header />
-      <main className='main section'>
+      <main className='main'>
         <Banner />
         <Welcome />
         <Laboratory />

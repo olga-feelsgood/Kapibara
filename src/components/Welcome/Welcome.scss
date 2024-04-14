@@ -1,9 +1,10 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
+
 .welcome {
   @include flex-center();
-  min-height: $mh-s;
+  min-height: $mh-xl;
   margin: 0 auto;
 }
 
@@ -11,7 +12,7 @@
   @include flex-center(column);
   @include max-width($max-w);
   margin: 0 auto;
-  padding: 0 $spacer-xxl;
+  padding: 0 $spacer-xxxl;
 }
 
 .welcome__text {
@@ -22,21 +23,21 @@
 
 @media(max-width: $md) {
   .welcome__container {
-    padding: 0 $spacer-l;
+    padding: 0 $spacer-xl;
   }
 }
 
 @media(max-width: $sm) {
   .welcome {
-    min-height: $mh-xs;
+    min-height: $mh-m;
   }
 
   .welcome__container {
-    padding: 30px $spacer-s;
+    padding: $spacer-l $spacer-s;
   }
 
   .welcome__text {
-    @include textFont($fs-s, $fw-large, $lh-ss, center, italic);
+    @include textFont($fs-s, $fw-large, $lh-sm, center, italic);
     padding-top: 46px;
   }
 }
