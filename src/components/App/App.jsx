@@ -1,5 +1,5 @@
-import './App.scss'
-import '../Section/Section.scss'
+import './App.sass'
+import '../Section/Section.sass'
 import Header from '../Header/Header'
 import Banner from '../Banner/Banner'
 import Welcome from '../Welcome/Welcome'

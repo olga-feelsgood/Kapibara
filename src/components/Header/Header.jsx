@@ -1,5 +1,5 @@
-import './Header.scss'
-import '../Section/Section.scss'
+import './Header.sass'
+import '../Section/Section.sass'
 import Logo from '../Logo/Logo'
 
 

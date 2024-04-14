@@ -1,0 +1,67 @@
+//Шрифты
+@mixin textFont ($fs, $fw, $lh, $ta, $fst: normal)
+  font-family: 'Montserrat'
+  font-size: $fs
+  font-weight: $fw
+  line-height: $lh
+  text-align: $ta
+  font-style: $fst
+
+//display flex
+@mixin flex($d: row, $al:normal)
+  display: flex
+
+  @if ($d ==column)
+    flex-direction: column
+
+  @if ($al ==flex-start)
+    align-items: flex-start
+
+@mixin flex-center($d: row)
+  display: flex
+  justify-content: center
+  align-items: center
+
+  @if ($d ==column)
+    flex-direction: column
+
+@mixin flex-between($d: row,  $al:center)
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  @if ($d ==column)
+    flex-direction: column
+
+  @if ($al ==flex-start)
+    align-items: flex-start
+
+//width
+@mixin max-width($w)
+  max-width: $w
+  width: 100%
+
+//border-radius
+@mixin border-radius($r: 0px)
+  border: none
+  border-radius: $r
+
+// background image
+@mixin bc-repeat($s: contain)
+  background-repeat: no-repeat
+  background-position: center
+
+  @if ($s ==cover)
+    background-size: cover
+
+//link hover
+@mixin hover ($h: 0.7)
+  cursor: pointer
+  opacity: $h
+
+//grid position
+@mixin grid ($cs, $ce, $rs, $re)
+  grid-column-start: $cs
+  grid-column-end: $ce
+  grid-row-start: $rs
+  grid-row-end: $re

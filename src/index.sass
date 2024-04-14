@@ -1,0 +1,23 @@
+@import '../src/styles/reset.sass'
+@import '../src/vendor/fonts/fonts.css'
+@import './styles/variables.sass'
+@import './styles/mixins.sass'
+
+:root
+  font-family: 'Montserrat', Arial, sans-serif
+  margin: 0 auto
+  font-synthesis: none
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  margin: 0
+  place-items: center
+  min-width: $min-w
+  min-height: 100vh
+
+.wrapper
+  @include flex-center(column)
+  min-height: 100vh
+  background-color: $white

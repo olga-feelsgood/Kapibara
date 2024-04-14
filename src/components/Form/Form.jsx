@@ -1,5 +1,5 @@
-import './Form.scss'
-import '../Section/Section.scss'
+import './Form.sass'
+import '../Section/Section.sass'
 import Input from '../Input/Input'
 import Button from '../Button/Button'
 import Popup from '../Popup/Popup'

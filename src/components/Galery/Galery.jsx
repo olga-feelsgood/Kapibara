@@ -1,5 +1,5 @@
-import './Galery.scss'
-import '../Section/Section.scss'
+import './Galery.sass'
+import '../Section/Section.sass'
 
 
 function Laboratory() {

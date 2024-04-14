@@ -1,8 +1,32 @@
-# React + Vite
+<h1 align="center">Проект "Mesto". Front-end и Back-end</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Проект выполнен в рамках обучения на курсе "Веб-разработчик" Яндекс.Практикума, проверен ревьюерами Яндекс.Практикума.
 
-Currently, two official plugins are available:
+Окончание проекта - май 2023 года.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+********
+Функциональность
+
+* регистрация и авторизация пользователя
+* ограничение прав доступа для незарегистрированных пользователей
+* при повторном визите в течение 7 дней пользователю не нужно снова авторизовываться
+* при открытии страницы данные профиля и карточки всех пользователей загружаются с сервера
+* возможность редактирования данных и фото профиля
+* добавление пользователем изображения в галерею
+* возможность удаления пользователем только своих изображений
+* проставление и удаление "like" изображениям
+* пароли пользователя хранятся в форме хэша
+* централизованная обработка ошибок на сервере
+* Joi для предварительной валидации приходящих на сервер запросов
+* все данные о пользователях и изобрежениях хранятся в MongoDB
+
+********
+Использованные технологии
+
+* JavaScript
+* React
+* CSS Modules
+* SASS
+
+*******
+Посмотреть проект можно по ссылке: https://olga-feelsgood.github.io/Kapibara/

@@ -1,4 +1,4 @@
-import './Popup.scss'
+import './Popup.sass'
 
 
 function Popup(props) {

@@ -1,5 +1,5 @@
-import './Welcome.scss'
-import '../Section/Section.scss'
+import './Welcome.sass'
+import '../Section/Section.sass'
 
 
 function Welcome() {

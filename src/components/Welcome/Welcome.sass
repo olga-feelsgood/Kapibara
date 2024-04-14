@@ -1,0 +1,33 @@
+@import '../../styles/variables.sass'
+@import '../../styles/mixins.sass'
+
+.welcome
+  @include flex-center()
+  min-height: $mh-xl
+  margin: 0 auto
+
+.welcome__container
+  @include flex-center(column)
+  @include max-width($max-w)
+  margin: 0 auto
+  padding: 0 $spacer-xxxl
+
+.welcome__text
+  @include max-width(1400px)
+  @include textFont($fs-l, $fw-large, $lh-l, center, italic)
+  color: $black
+
+@media(max-width: $md)
+  .welcome__container
+    padding: 0 $spacer-xl
+
+@media(max-width: $sm)
+  .welcome
+    min-height: $mh-m
+
+  .welcome__container
+    padding: $spacer-l $spacer-s
+
+  .welcome__text
+    @include textFont($fs-s, $fw-large, $lh-sm, center, italic)
+    padding-top: 46px

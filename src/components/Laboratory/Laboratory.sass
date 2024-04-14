@@ -1,0 +1,95 @@
+@import '../../styles/variables.sass'
+@import '../../styles/mixins.sass'
+
+.laboratory
+  @include flex-center()
+  background: linear-gradient($gradientOne, $light)
+
+.laboratory__container
+  @include flex-between(column, flex-start)
+  @include max-width($max-w)
+  margin: 0 auto
+  padding: $spacer-xxl $spacer-xxxl
+
+.laboratory__wrapper
+  width: 100%
+  @include flex-between()
+
+.laboratory__text-container
+  @include flex(column)
+  @include max-width(1020px)
+
+.laboratory__text
+  @include textFont($fs-m, $fw-base, $lh-m, left)
+
+.laboratory__text_part1
+  margin-top: $spacer-xl
+  margin-bottom: $spacer-s
+
+.laboratory__link
+  @include max-width(249px)
+  width: 100%
+  @include flex-center()
+  @include border-radius($big-r)
+  @include textFont($fs-m, $fw-base, $lh-m, left)
+  color: $white
+  background-color: $medium
+  margin-top: $spacer-xl
+  padding: $spacer-xs $spacer-s
+
+.laboratory__link::after
+  content: ''
+  width: 24px
+  height: 24px
+  background-image: url(../../images/laboratory_arrow.svg)
+  background-repeat: no-repeat
+  background-position: center
+  margin-left: $spacer-xxxs
+
+.laboratory__photo-container
+  width: 332px
+  height: 314px
+  @include border-radius($big-r)
+  margin-top: -62px
+
+.laboratory__photo
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+@media(max-width: $xxl)
+  .laboratory__text-container
+    padding-right: $spacer-s
+
+@media(max-width: $md)
+  .laboratory__container
+    padding: 0 $spacer-xl
+
+@media(max-width: $sm)
+  .laboratory__container
+    padding: $spacer-xl $spacer-s
+
+  .laboratory__title
+    margin-bottom: $spacer-m
+
+  .laboratory__wrapper
+    flex-direction: column-reverse
+
+  .laboratory__text-container
+    padding-right: 0
+
+  .laboratory__text
+    @include textFont($fs-s, $fw-base, $lh-sm, left)
+
+  .laboratory__text_part1
+    margin-top: $spacer-m
+
+  .laboratory__photo-container
+    width: 324px
+    height: 306px
+    margin-top: 0
+
+  .laboratory__link
+    @include max-width(223px)
+    @include textFont($fs-s, $fw-base, $lh-sm, left)
+    margin-top: $spacer-s

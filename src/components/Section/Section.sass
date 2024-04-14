@@ -1,0 +1,12 @@
+@import '../../styles/variables.sass'
+@import '../../styles/mixins.sass'
+
+.section
+  width: 100%
+
+.section__title
+  @include textFont($fs-xxl, $fw-large, $lh-xxl, left)
+
+@media(max-width: $sm)
+  .section__title
+    @include textFont($fs-xl, $fw-large, $lh-xl, left)

@@ -1,0 +1,48 @@
+@import '../../styles/variables.sass'
+@import '../../styles/mixins.sass'
+
+.input
+  @include flex-center(column)
+
+.input__field
+  width: 280px
+  height: 53px
+  @include flex-center()
+  @include border-radius($big-r)
+  @include textFont($fs-m, $fw-base, $lh-m, left)
+  background-color: $white
+  color: $black
+  padding-left: $spacer-s
+
+.input__field::placeholder
+  @include textFont($fs-m, $fw-base, $lh-m, left)
+  color: $gray
+
+.input__field:focus
+  outline: 2px solid $medium
+
+.input__field_error
+  border: 2px solid $error
+
+.input__error-container
+  @include max-width(280px)
+  min-height: $mh-xxxs
+  @include textFont($fs-m, $fw-base, $lh-m, left)
+  color: $error
+  margin-top: $spacer-xxxs
+  padding-left: $spacer-s
+
+@media(max-width: $sm)
+  .input__field
+    width: 324px
+    height: 49px
+    @include textFont($fs-s, $fw-base, $lh-sm, left)
+
+  .input__field::placeholder
+    @include textFont($fs-s, $fw-base, $lh-sm, left)
+
+  .input__error-container
+    min-height: $lh-xxs
+    @include textFont($fs-xxs, $fw-base, $lh-xxs, left)
+    margin-top: 0
+    padding-left: $spacer-s

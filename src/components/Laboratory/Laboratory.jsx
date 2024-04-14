@@ -1,6 +1,6 @@
-import './Laboratory.scss'
-import '../Section/Section.scss'
-import '../Link/Link.scss'
+import './Laboratory.sass'
+import '../Section/Section.sass'
+import '../Link/Link.sass'
 import kapibara from '../../images/laboratory_kapibara.png'
 
 
